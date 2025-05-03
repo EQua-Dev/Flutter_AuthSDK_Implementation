@@ -1,0 +1,51 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios18.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AuthSDK
+@_exported import AuthSDK
+import Foundation
+import Security
+import Swift
+import SwiftUI
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct AuthConfig {
+  public var primaryColor: SwiftUICore.Color
+  public var backgroundColor: SwiftUICore.Color
+  public var textColor: SwiftUICore.Color
+  public var font: SwiftUICore.Font
+  public var submitButtonText: Swift.String
+  public var showUsername: Swift.Bool
+  public init()
+  public init(primaryColorHex: Swift.String, backgroundColorHex: Swift.String, textColorHex: Swift.String, submitButtonText: Swift.String, showUsername: Swift.Bool)
+}
+public struct UserData : Swift.Codable {
+  public let email: Swift.String
+  public let password: Swift.String
+  public let username: Swift.String?
+  public let firstName: Swift.String
+  public let lastName: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension SwiftUICore.Color {
+  public init?(hex: Swift.String)
+}
+@_hasMissingDesignatedInitializers public class SecureStorageHelper {
+  public static func store(user: AuthSDK.UserData)
+  public static func retrieveUser() -> AuthSDK.UserData?
+  @objc deinit
+}
+@_Concurrency.MainActor @preconcurrency public struct AuthView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(config: AuthSDK.AuthConfig, onSubmit: @escaping (AuthSDK.UserData) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7AuthSDK0A4ViewV4bodyQrvp", 0) __
+}
+@_hasMissingDesignatedInitializers public class AuthSDKClass {
+  public static func launch(config: AuthSDK.AuthConfig, onSubmit: @escaping (AuthSDK.UserData) -> Swift.Void) -> some SwiftUICore.View
+  
+  @objc deinit
+}
+extension AuthSDK.AuthView : Swift.Sendable {}

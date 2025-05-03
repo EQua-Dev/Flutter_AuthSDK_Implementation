@@ -16,7 +16,7 @@ class AuthTestScreen extends StatelessWidget {
               primaryColor: "#6200EE",
               backgroundColor: "#FFFFFF",
               textColor: "#000000",
-              submitButtonText: "Register",
+              submitButtonText: "Register New User",
               showUsername: true,
             );
 

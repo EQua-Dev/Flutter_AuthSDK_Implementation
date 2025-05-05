@@ -1098,10 +1098,7 @@
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
-        "moduleName": "AuthSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "AuthSDK"
       },
       {
         "kind": "TypeDecl",
@@ -1560,37 +1557,44 @@
     {
       "filePath": "\/Users\/richarduzor\/Devs\/NativeiOSProjects\/AuthSDK\/AuthSDK\/view\/AuthView.swift",
       "kind": "StringLiteral",
-      "offset": 230,
+      "offset": 147,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/richarduzor\/Devs\/NativeiOSProjects\/AuthSDK\/AuthSDK\/view\/AuthView.swift",
       "kind": "StringLiteral",
-      "offset": 267,
+      "offset": 184,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/richarduzor\/Devs\/NativeiOSProjects\/AuthSDK\/AuthSDK\/view\/AuthView.swift",
       "kind": "StringLiteral",
-      "offset": 304,
+      "offset": 221,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/richarduzor\/Devs\/NativeiOSProjects\/AuthSDK\/AuthSDK\/view\/AuthView.swift",
       "kind": "StringLiteral",
-      "offset": 342,
+      "offset": 259,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/richarduzor\/Devs\/NativeiOSProjects\/AuthSDK\/AuthSDK\/view\/AuthView.swift",
       "kind": "StringLiteral",
-      "offset": 379,
+      "offset": 296,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/richarduzor\/Devs\/NativeiOSProjects\/AuthSDK\/AuthSDK\/view\/AuthView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 482,
+      "length": 5,
+      "value": "false"
     }
   ]
 }
